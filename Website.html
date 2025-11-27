@@ -332,7 +332,47 @@
                 <div class="col-lg-6">
                     <form>
                         <label for="email" class="form-label">Email address:</label>
-                        <input type="email" class="form-control" id="email" placeholder="e.g ferev@gmail.com">
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-fill"></i>
+                            </span>
+                            <input type="email" class="form-control" id="email" placeholder="e.g ferev@gmail.com">
+                        </div>
+                        
+
+                        <label for="name" class="form-label">Name:</label>
+                        <div class="input-group mb-4">
+                             <span class="input-group-text">
+                                <i class="bi bi-person-fill"></i>
+                            </span>
+                            <input type="text" class="form-control" id="name" placeholder="e.g Ngong">
+                        </div>
+                        
+
+                        <label for="subject" class="form-label">What is your question about?</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots-fill"></i>
+                            </span>
+                            <select name="" id="subject" class="form-select">
+                                <option value="pricing">Pricing Query</option>
+                                <option value="content" selected>Content Query</option>
+                                <option value="amount">Amount Query</option>
+                                <option value="other">Other Query</option>
+                            </select>
+                        </div>
+                       
+
+                        
+                        <div class="form-floating mb-4 mt-5">
+                             <textarea class="form-control" id="query" style="height: 140px"></textarea>
+                             <label for="Query" >Your query...</label>
+                        </div>
+
+                        <div class="mb-4 text-center">
+                            <button type="submit" class="btn btn-secondary">Submit</button>
+                        </div>
+                       
                     </form>
                 </div>
 
